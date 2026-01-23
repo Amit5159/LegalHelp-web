@@ -2,19 +2,20 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# 1. Initialize a new git record in this folder
+git init
 
-This contains everything you need to run your app locally.
+# 2. Add all your files
+git add .
 
-View your app in AI Studio: https://ai.studio/apps/drive/17Op4ZbJHu-11_z2JSbd3GZzh3ywbLt1t
+# 3. Create the commit
+git commit -m "Deployment Update"
 
-## Run Locally
+# 4. Rename the branch to 'main' (crucial step)
+git branch -M main
 
-**Prerequisites:**  Node.js
+# 5. Connect back to your GitHub repository
+git remote add origin https://github.com/Amit5159/LegalHelp-web.git
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+# 6. Force the push to overwrite the old broken code
+git push -u origin main --force
