@@ -13,7 +13,7 @@ const App = () => {
     // iOS Detection and Redirect Logic
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     if (isIOS) {
-      window.location.replace("https://legalhelp24.in");
+      window.location.replace("https://legalhelp24.in/test");
     }
 
     const handleScroll = () => {
